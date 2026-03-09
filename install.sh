@@ -26,11 +26,12 @@ asking "gtk-3.0"
 asking "gtk-4.0"
 asking "kitty"
 
-echo "source = ~/.cache/quickshell/Skeleton-Shell/ConfigFolder/hyprland/skeleton-shell.conf" >> ~/.config/hypr/hyprland.conf
 
 qs -p $HOME/.local/share/Skeleton-Shell & disown
-sleep 2
+sleep 1
 pkill qs
 qs -p $HOME/.local/share/Skeleton-Shell & disown
 hyprctl reload
+
+cat ~/.config/hypr/hyprland.conf | grep "Skeleton-Shell" echo "source = ~/.cache/quickshell/Skeleton-Shell/ConfigFolder/hyprland/skeleton-shell.conf" >> ~/.config/hypr/hyprland.conf
 echo "Done!"
