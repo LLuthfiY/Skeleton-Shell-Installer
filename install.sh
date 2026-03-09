@@ -29,3 +29,8 @@ asking "kitty"
 echo "source = ~/.cache/quickshell/Skeleton-Shell/ConfigFolder/hyprland/skeleton-shell.conf" >> ~/.config/hypr/hyprland.conf
 
 qs -p $HOME/.local/share/Skeleton-Shell & disown
+sleep 2
+pkill qs
+qs -p $HOME/.local/share/Skeleton-Shell & disown
+
+echo "Done!"
