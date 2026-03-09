@@ -1,0 +1,112 @@
+{
+    "appearance": {
+        "darkMode": true,
+        "palette": {
+            "type": "scheme-tonal-spot"
+        },
+        "uiScale": 1
+    },
+    "background": {
+        "liveWallpaper": false,
+        "liveWallpaperPath": "file:///home/lluth/.config/config/livewallpaper",
+        "mute": true,
+        "wallpaperPath": "file:///home/lluth/Downloads/0105.292109.jpg"
+    },
+    "bar": {
+        "background": "surface",
+        "border": 0,
+        "borderColor": "primary",
+        "borderRadius": 16,
+        "borderScreen": false,
+        "centerWidgets": [
+            "Spectrum.qml"
+        ],
+        "endWidgets": [
+            "SysTray.qml",
+            "Separator.qml",
+            "Time.qml"
+        ],
+        "foreground": "primary",
+        "fullWidth": false,
+        "margin": 0,
+        "position": "top",
+        "screenList": [
+            "HDMI-A-1"
+        ],
+        "startWidgets": [
+            "Workspace.qml"
+        ],
+        "width": 899
+    },
+    "dashboard": {
+        "position": "right",
+        "widgets": [
+            "PowerAndSetting.qml",
+            "SystemMonitor.qml",
+            "NotificationHistory.qml--fill--",
+            "StyledCalendar.qml"
+        ]
+    },
+    "interactions": {
+        "scrolling": {
+            "fasterTouchpadScroll": false
+        }
+    },
+    "mediaPlayer": {
+        "enable": false
+    },
+    "modules": {
+        "aiChat": true,
+        "background": true,
+        "bar": true,
+        "dashboard": true,
+        "enabled": [
+        ],
+        "launcher": true,
+        "lockscreen": true,
+        "mediaPlayer": true,
+        "notification": true,
+        "osd": true,
+        "overview": true,
+        "popupCloser": true
+    },
+    "notification": {
+        "position": "bottomRight"
+    },
+    "services": {
+        "ai": {
+            "ollama": {
+                "address": "http://localhost:11434",
+                "apiKey": "sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+                "maxChatForContext": 10,
+                "model": "minimax-m2.5:cloud"
+            },
+            "provider": "ollama"
+        },
+        "geoLocation": {
+            "latitude": "-6.5944",
+            "longitude": "106.75"
+        },
+        "nightLight": {
+            "dayTemp": 5700,
+            "nightTemp": 4500,
+            "state": 0
+        },
+        "systemMonitor": {
+            "interval": 1000
+        }
+    },
+    "windowManager": {
+        "activeOpacity": 1,
+        "activeWindowBorderColor": "primary",
+        "applyConfigDelay": 1000,
+        "gapsIn": 8,
+        "gapsOut": 16,
+        "inactiveOpacity": 0.7,
+        "inactiveWindowBorderColor": "surface_container",
+        "windowBorderRadius": 8,
+        "windowBorderSize": 0,
+        "windowManager": "hyprland",
+        "workspaces": 8
+    }
+}
