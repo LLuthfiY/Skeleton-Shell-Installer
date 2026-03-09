@@ -32,5 +32,5 @@ qs -p $HOME/.local/share/Skeleton-Shell & disown
 sleep 2
 pkill qs
 qs -p $HOME/.local/share/Skeleton-Shell & disown
-
+hyprctl reload
 echo "Done!"
