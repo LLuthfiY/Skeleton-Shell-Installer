@@ -40,7 +40,7 @@ output_path = '~/.cache/quickshell/Skeleton-Shell/ConfigFolder/hyprland/colors.c
 input_path = '~/.config/matugen/template/zed'
 output_path = '~/.config/zed/themes/matugen.json'
 
-pre_hook = 'cp {{image}} ~/.cache/quickshell/Skeleton-Shell/ConfigFolder/wallpaper'
+# pre_hook = 'cp {{image}} ~/.cache/quickshell/Skeleton-Shell/ConfigFolder/wallpaper'
 post_hook = "qs -p $HOME/.local/share/Skeleton-Shell ipc call wallpaper update"
 
 
