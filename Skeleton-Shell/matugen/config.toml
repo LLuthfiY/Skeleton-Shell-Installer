@@ -20,6 +20,10 @@ output_path = '~/.config/kdeglobals'
 input_path = '~/.cache/quickshell/Skeleton-Shell/ConfigFolder/matugen/template/kitty'
 output_path = '~/.cache/quickshell/Skeleton-Shell/ConfigFolder/kittyColors.conf'
 
+[templates.alacritty]
+input_path = '~/.cache/quickshell/Skeleton-Shell/ConfigFolder/matugen/template/alacritty'
+output_path = '~/.cache/quickshell/Skeleton-Shell/ConfigFolder/alacrittyColor.toml'
+
 [templates.yazi]
 input_path = '~/.cache/quickshell/Skeleton-Shell/ConfigFolder/matugen/template/yazi'
 output_path = '~/.config/yazi/theme.toml'
@@ -31,6 +35,10 @@ output_path = '~/.local/share/color-schemes/Matugen.colors'
 [templates.hyprland]
 input_path = '~/.cache/quickshell/Skeleton-Shell/ConfigFolder/matugen/template/hyprland'
 output_path = '~/.cache/quickshell/Skeleton-Shell/ConfigFolder/hyprland/colors.conf'
+
+[templates.hyprlandLua]
+input_path = '~/.cache/quickshell/Skeleton-Shell/ConfigFolder/matugen/template/hyprlandLua'
+output_path = '~/.cache/quickshell/Skeleton-Shell/ConfigFolder/hyprland/colors.lua'
 
 # [templates.rofi]
 # input_path = '~/.cache/quickshell/Skeleton-Shell/ConfigFolder/matugen/template/rofi'

@@ -137,6 +137,7 @@ Name=Matugen
 TerminalApplication=kitty
 TerminalService=kitty.desktop
 shadeSortColumn=true
+font=Ubuntu Nerd Font Propo,9,-1,5,50,0,0,0,0,0
 
 [Appearance]
 color_scheme=Matugen

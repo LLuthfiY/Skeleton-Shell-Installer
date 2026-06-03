@@ -1,0 +1,5 @@
+hl.bind("ALT + SPACE", hl.dsp.exec_cmd('qs -p "$HOME/.local/share/Skeleton-Shell" ipc call launcher toggle &'))
+hl.bind("SUPER + SPACE", hl.dsp.exec_cmd('qs -p "$HOME/.local/share/Skeleton-Shell" ipc call dashboard toggle &'))
+hl.bind("SUPER + S", hl.dsp.exec_cmd('qs -p "$HOME/.local/share/Skeleton-Shell" ipc call settings toggle &'))
+hl.bind("SUPER + TAB", hl.dsp.exec_cmd('qs -p "$HOME/.local/share/Skeleton-Shell" ipc call overview toggle &'))
+hl.bind("SUPER + A", hl.dsp.exec_cmd('qs -p "$HOME/.local/share/Skeleton-Shell" ipc call aiChat toggle &'))
