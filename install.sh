@@ -36,17 +36,24 @@ hyprctl reload
 # cat ~/.config/hypr/hyprland.conf | grep "Skeleton-Shell" echo "source = ~/.cache/quickshell/Skeleton-Shell/ConfigFolder/hyprland/skeleton-shell.conf" >> ~/.config/hypr/hyprland.conf
 # echo "Done!"
 
-# Check if already present before appending
-if ! grep -q "Skeleton-Shell" ~/.config/hypr/hyprland.conf; then
-    echo -e "\nsource = ~/.cache/quickshell/Skeleton-Shell/ConfigFolder/hyprland/skeleton-shell.conf" >> ~/.config/hypr/hyprland.conf
-    echo "Added Skeleton-Shell config!"
+if [ -f "$HOME/.config/hypr/hyprland.conf" ]; then
+  if ! grep -q "Skeleton-Shell" $HOME/.config/hypr/hyprland.conf; then
+      echo -e "\nsource = ~/.cache/quickshell/Skeleton-Shell/ConfigFolder/hyprland/skeleton-shell.conf" >> $HOME/.config/hypr/hyprland.conf
+      echo "Added Skeleton-Shell config!"
+  else
+      echo "Skeleton-Shell already configured"
+  fi
 else
-    echo "Skeleton-Shell already configured"
+  echo "There's no hyprland.conf"
 fi
 
-if ! grep -q "Skeleton-Shell" ~/.config/hypr/hyprland.lua; then
-  echo -e "\nlocal home = os.getenv(\"HOME\")\npackage.path = home .. \"/.cache/quickshell/Skeleton-Shell/ConfigFolder/hyprland/?.lua;\" .. package.path\nrequire(\"skeleton-shell\")" >> ~/.config/hypr/hyprland.lua
-  echo "Added Skeleton-Shell config!"
+if [ -f "$HOME/.config/hypr/hyprland.lua" ]; then
+  if ! grep -q "Skeleton-Shell" $HOME/.config/hypr/hyprland.lua; then
+    echo -e "\nlocal home = os.getenv(\"HOME\")\npackage.path = home .. \"/.cache/quickshell/Skeleton-Shell/ConfigFolder/hyprland/?.lua;\" .. package.path\nrequire(\"skeleton-shell\")" >> $HOME/.config/hypr/hyprland.lua
+    echo "Added Skeleton-Shell config!"
+  else
+    echo "Skeleton-Shell already configured"
+  fi
 else
-  echo "Skeleton-Shell already configured"
+  echo "There's no hyprland.lua"
 fi
